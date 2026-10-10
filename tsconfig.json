@@ -1,0 +1,13 @@
+{
+  "extends": "$app/tsconfig",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "$convex/*": ["./convex/*"],
+      "$convex": ["./convex"],
+      "$lib": ["./src/lib/index.ts"],
+      "$lib/*": ["./src/lib/*"]
+    }
+  },
+  "include": ["src", "convex", "vite.config.ts", "playwright.config.ts"]
+}
